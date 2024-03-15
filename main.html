@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+<style>
+	.flex-container {
+  display: flex;
+		flex-direction: row;
+	}
+#main {
+ width: 600px;
+height: 100px;
+display: flex;
+	text-align:center;
+	font-size:50px;
+	flex-wrap: wrap;
+background-color: green;
+}
+	.main {
+ display: flex;
+background-color: red;
+}
+	.main1 {
+ width: 600px;
+height: 100px;
+display: flex;
+background-color: blue;
+}
+	#main div {
+  -ms-flex: 8;  /* IE 10 */  
+  flex: 8;
+}
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<div id="main" class="flex-container">
+  <div>3</div>
+		<div>3</div>
+		<div>3</div>
+		<div>3</div>
+		<div>3</div>
+		<div class="main">1</div>
+		<div class="main1">2</div>
+		
+</div>
 </body>
-
 </html>
+
+
+
